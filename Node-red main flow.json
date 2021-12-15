@@ -1,0 +1,1005 @@
+[
+    {
+        "id": "61ba2e075fe55eea",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e407bdcb603f8ba3",
+        "type": "rpi-gpio in",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "pin": "4",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "a2f180ecbfa10dd6"
+            ]
+        ]
+    },
+    {
+        "id": "24d27c059e898ba6",
+        "type": "exec",
+        "z": "61ba2e075fe55eea",
+        "command": "bash  /home/pi/Project_HomeSec/initiate_venv.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Running Python to test image",
+        "x": 1030,
+        "y": 320,
+        "wires": [
+            [
+                "58e00b2156cd7d4b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "58e00b2156cd7d4b",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "str = msg.payload;\n  \n  return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 420,
+        "wires": [
+            [
+                "8b5840c4932be4c7"
+            ]
+        ]
+    },
+    {
+        "id": "c5a90e33370899bf",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8b5840c4932be4c7",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "Check for unknown probability",
+        "func": "a = msg.payload.split(\" \")\nlet low = 0\nlet arr = []\nlet val = 0\nfor (let i = 0; i < a.length; i++) {\n   if (i % 2 == 0) {\n      if (a[i] == \"unknown\"){\n        val = parseInt(a[i+1])\n        i = i+1\n      }\n   }\n    else{\n        arr.push(parseInt(a[i]))\n    }\n}\n// msg.payload = arr\nfor (let i = 0; i < arr.length; i++) {\n    if (arr[i] > val) {\n        msg.payload = 0\n        break\n        }\n    else msg.payload = 1\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 480,
+        "wires": [
+            [
+                "c5a90e33370899bf",
+                "e8d8d64bd77cb090"
+            ]
+        ]
+    },
+    {
+        "id": "a2f180ecbfa10dd6",
+        "type": "delay",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "20",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 300,
+        "wires": [
+            [
+                "24d27c059e898ba6"
+            ]
+        ]
+    },
+    {
+        "id": "4929aed25b034b30",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1880,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f9a04bc731ea87c",
+        "type": "camerapi-takephoto",
+        "z": "61ba2e075fe55eea",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 1510,
+        "y": 260,
+        "wires": [
+            [
+                "d9507b6ccc624a01"
+            ]
+        ]
+    },
+    {
+        "id": "d9507b6ccc624a01",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  type : 'photo',\n  chatId: 5058934063,\n  message_id : 90\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 280,
+        "wires": [
+            [
+                "4929aed25b034b30"
+            ]
+        ]
+    },
+    {
+        "id": "64c8f2a47d4254dc",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Good Morning! sir. Hope you will enjoy your day today./nEnter /camera-status to get information about the \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1420,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e45a67124d2af31",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b9ccb10234b6505",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "sending message",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"*Intruder Alert:*\\nDo you know this person?\\nType /know or /unknown\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 400,
+        "wires": [
+            [
+                "3e45a67124d2af31"
+            ]
+        ]
+    },
+    {
+        "id": "143b365b7f185a6e",
+        "type": "delay",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 360,
+        "wires": [
+            [
+                "7b9ccb10234b6505"
+            ]
+        ]
+    },
+    {
+        "id": "e8d8d64bd77cb090",
+        "type": "switch",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1330,
+        "y": 360,
+        "wires": [
+            [
+                "143b365b7f185a6e",
+                "9f9a04bc731ea87c"
+            ]
+        ]
+    },
+    {
+        "id": "ce1ac4510c1ba54b",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 740,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45b519ee3994aff3",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Ok, Sorry for disturbing. Have a good Day.\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 780,
+        "wires": [
+            [
+                "ce1ac4510c1ba54b"
+            ]
+        ]
+    },
+    {
+        "id": "f852b6bc1fd7825a",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 920,
+        "y": 880,
+        "wires": [
+            [
+                "d52bb57afe3338ec"
+            ]
+        ]
+    },
+    {
+        "id": "45df7f30968df1aa",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "unknown responser",
+        "func": "var opts = {\n  reply_markup: JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": \"Yes\",\n                    \"callback_data\": \"1\"            \n                }, \n                {\n                    \"text\": \"No\",\n                    \"callback_data\": \"2\"            \n                }]\n            ]\n  })\n};\n\nmsg.payload.content = \"Do you want to inform police?\";\nmsg.payload.options = opts;\nmsg.payload.chatId = 5058934063;\nmsg.payload.messageId = 99;\nmsg.payload.sentMessageId = 99;\nmsg.payload.type = \"message\";\n\nreturn [ msg ];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "5e58486536b70e5e",
+                "f852b6bc1fd7825a"
+            ]
+        ]
+    },
+    {
+        "id": "5e58486536b70e5e",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "5de6742b6c1278c1",
+        "type": "telegram event",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 330,
+        "y": 962,
+        "wires": [
+            [
+                "1735457db0a95f1b",
+                "aefa2b9394cc303e"
+            ]
+        ]
+    },
+    {
+        "id": "d52bb57afe3338ec",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "store message ID",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1735457db0a95f1b",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "YES REALLY",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 960,
+        "wires": [
+            [
+                "ed0d8e6809bafd10"
+            ]
+        ]
+    },
+    {
+        "id": "0b3e831bb7b03c31",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/unknown",
+        "command": "/unknown",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 840,
+        "wires": [
+            [
+                "45df7f30968df1aa"
+            ]
+        ]
+    },
+    {
+        "id": "31863ce9bc1c9804",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/know",
+        "command": "/know",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 760,
+        "wires": [
+            [
+                "45b519ee3994aff3"
+            ]
+        ]
+    },
+    {
+        "id": "ed0d8e6809bafd10",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aefa2b9394cc303e",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = msg.payload.content\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1040,
+        "wires": [
+            [
+                "fcf443b14fdb3faf"
+            ]
+        ]
+    },
+    {
+        "id": "fadb466b1eb9f112",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 920,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40a1f6d39a8250b2",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Informed police. Do you want to inform neighbor? Type '/neighbor' to alert the neighbor\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1140,
+        "wires": [
+            [
+                "fadb466b1eb9f112"
+            ]
+        ]
+    },
+    {
+        "id": "fcf443b14fdb3faf",
+        "type": "switch",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 1100,
+        "wires": [
+            [
+                "40a1f6d39a8250b2"
+            ]
+        ]
+    },
+    {
+        "id": "ea2d47f1c30fa6bb",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/neighbor",
+        "command": "/neighbor",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 1260,
+        "wires": [
+            [
+                "fd6dd3f55324a7f6"
+            ]
+        ]
+    },
+    {
+        "id": "fd6dd3f55324a7f6",
+        "type": "mqtt out",
+        "z": "61ba2e075fe55eea",
+        "name": "Sending to phone Node-red",
+        "topic": "topic/siren",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9300d078150a786e",
+        "x": 700,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "afab14f89867cd4e",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/camera-status",
+        "command": "/camera-status",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 1380,
+        "wires": [
+            [
+                "a3c3b140af9c3f6b"
+            ]
+        ]
+    },
+    {
+        "id": "336a7b95b0c1181c",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 810,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0cbac4babdeca2bf",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  message: `Hey ${msg.originalMessage.from.first_name}, here is the random piture you requested`,\n  type : 'photo',\n  chatId: msg.originalMessage.chat.id,\n  chat: msg.originalMessage.chat,\n  from: msg.originalMessage.from,\n  message_id : msg.originalMessage.message_id\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1360,
+        "wires": [
+            [
+                "336a7b95b0c1181c"
+            ]
+        ]
+    },
+    {
+        "id": "a3c3b140af9c3f6b",
+        "type": "camerapi-takephoto",
+        "z": "61ba2e075fe55eea",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 520,
+        "y": 1340,
+        "wires": [
+            [
+                "0cbac4babdeca2bf"
+            ]
+        ]
+    },
+    {
+        "id": "a0c992451e19a410",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 840,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b888a6d3647a7c7a",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Good Morning! sir. Hope you will enjoy your day today./nEnter /camera-status to get information about the \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1640,
+        "wires": [
+            [
+                "a0c992451e19a410"
+            ]
+        ]
+    },
+    {
+        "id": "ccd950d10039ecc9",
+        "type": "inject",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 06 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 1620,
+        "wires": [
+            [
+                "b888a6d3647a7c7a"
+            ]
+        ]
+    },
+    {
+        "id": "073fe7d8e3127d90",
+        "type": "comment",
+        "z": "61ba2e075fe55eea",
+        "name": "Sending Good Morning and warm message with today's news/weather update in 6am every morning!",
+        "info": "",
+        "x": 570,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "23d84a79e9c307ae",
+        "type": "telegram event",
+        "z": "61ba2e075fe55eea",
+        "name": "live location receiver",
+        "bot": "d186a99c7342f2a5",
+        "event": "edited_message",
+        "autoanswer": true,
+        "x": 270,
+        "y": 1940,
+        "wires": [
+            [
+                "1828ae98ad127d2b",
+                "3f347ab30007fd71"
+            ]
+        ]
+    },
+    {
+        "id": "1828ae98ad127d2b",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "Get weather info from the location information",
+        "func": "if(msg.payload.location)\n{\n    var lat = msg.payload.location.latitude;\n    var lng = msg.payload.location.longitude;\n    var user = msg.payload.from.username;\n    \n    msg.payload.type = 'message';\n    msg.payload.content = user + ' moved to lat=' + lat + ' lon=' + lng;\n    msg.location.lon = lng\n    msg.location.lat = lat\n    return msg;\n}\nelse\n{\n    return null;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1920,
+        "wires": [
+            [
+                "02de61192402a14c"
+            ]
+        ]
+    },
+    {
+        "id": "02de61192402a14c",
+        "type": "openweathermap",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "",
+        "country": "",
+        "language": "en",
+        "x": 870,
+        "y": 1940,
+        "wires": [
+            [
+                "cb7bb8f25e2fb306"
+            ]
+        ]
+    },
+    {
+        "id": "cb7bb8f25e2fb306",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "3f347ab30007fd71",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "e47dd519ecc9eec1",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "send location",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 1780,
+        "wires": [
+            [
+                "5192f299eaaef6b4"
+            ]
+        ]
+    },
+    {
+        "id": "6b8eaec54dc9ca77",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "send initial location",
+        "func": "// see https://core.telegram.org/bots/api#sendlocation\n\nvar lat = flow.get(\"lat\");\nvar lng = flow.get(\"lng\");\nvar time = flow.get(\"time\");\n\n\nmsg.payload.type = 'location';\nmsg.payload.content = {\n    latitude : lat,\n    longitude : lng\n};\n  \nmsg.payload.options = {\n    live_period : time\n};  \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1780,
+        "wires": [
+            [
+                "e47dd519ecc9eec1"
+            ]
+        ]
+    },
+    {
+        "id": "5192f299eaaef6b4",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "store messageId",
+        "func": "// Here we store the message id of the live location message, \n// as we need to update exactly this one later\n\nvar messageId = msg.payload.sentMessageId;\nflow.set(\"messageId\", messageId);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eecf1efa7ec4688a",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/where-am-i",
+        "command": "/where-am-i",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": true,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 1780,
+        "wires": [
+            [
+                "6b8eaec54dc9ca77"
+            ]
+        ]
+    },
+    {
+        "id": "864f383a7b3b3214",
+        "type": "comment",
+        "z": "61ba2e075fe55eea",
+        "name": "Gives the location of the telegram user",
+        "info": "",
+        "x": 400,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "65ba84590226e8b3",
+        "type": "comment",
+        "z": "61ba2e075fe55eea",
+        "name": "Traces the location information for further uses later",
+        "info": "",
+        "x": 370,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "d186a99c7342f2a5",
+        "type": "telegram bot",
+        "botname": "cs459_homesec_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "9300d078150a786e",
+        "type": "mqtt-broker",
+        "name": "Sending to phone Node-red",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "number-2",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "test",
+        "birthQos": "0",
+        "birthPayload": "test",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": "",
+        "credentials": {}
+    }
+]
