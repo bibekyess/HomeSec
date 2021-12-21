@@ -1,0 +1,3999 @@
+[
+    {
+        "id": "61ba2e075fe55eea",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d36d27fb1c254a06",
+        "type": "tab",
+        "label": "Final flow",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cebe629e37033d3e",
+        "type": "tab",
+        "label": "bereket flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0db5869f6561a72",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "34d8d0c3c220b5ce",
+        "type": "tab",
+        "label": "bereket flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1397a568efc37c3d",
+        "type": "tab",
+        "label": "bereket flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "52be123b8c3723c6",
+        "type": "tab",
+        "label": "Munna-Manoj",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e77514a2354cfdbd",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9300d078150a786e",
+        "type": "mqtt-broker",
+        "name": "number-1",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "number-2",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "test",
+        "birthQos": "0",
+        "birthPayload": "test",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7931e79ac8b49d5f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b440b12306a4d4b3",
+        "type": "ui_tab",
+        "name": "HomeSec",
+        "icon": "Dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0d2d76edd345072d",
+        "type": "ui_link",
+        "name": "Link 2",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "672f8d0dbf96bb91",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "b440b12306a4d4b3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c7a43587.2944e8",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "fbd536a.22bf9c8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fbd536a.22bf9c8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "5b4b39a99e3a30a7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "driver.cloudmqtt.com",
+        "port": "18659",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a14138a1f03fc79c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "143.248.196.197",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3cc67ec16f9506d9",
+        "type": "mqtt-broker",
+        "name": "bake",
+        "broker": "d5e9dbabde2e436192f6d8781ed5b00b.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "4d6622d68612c398",
+        "clientid": "EMQ",
+        "autoConnect": false,
+        "usetls": true,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cb1ae1c656e082ef",
+        "type": "ui_tab",
+        "name": "HomeSec",
+        "icon": "Dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "756e9f0fc22ddefa",
+        "type": "ui_link",
+        "name": "Link 2",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "6dcd9c253384dd05",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "cb1ae1c656e082ef",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1f0bf3631a8c28b6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "64589a7bc1c3805f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "143.248.196.197",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3febcaaac38ed0a9",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "143.248.196.197",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4d6622d68612c398",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "a3411f53bc307fbe",
+        "type": "mqtt-broker",
+        "name": "bake",
+        "broker": "d5e9dbabde2e436192f6d8781ed5b00b.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "4d6622d68612c398",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d9be4cc312bdd414",
+        "type": "linetoken",
+        "name": "notify"
+    },
+    {
+        "id": "d186a99c7342f2a5",
+        "type": "telegram bot",
+        "botname": "cs459_homesec_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "fa7a9376.321ce",
+        "type": "telegram bot",
+        "z": "cebe629e37033d3e",
+        "botname": "mybot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "",
+        "socksusername": "",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "",
+        "publicbotport": "",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "d086776c.7de82",
+        "type": "telegram bot",
+        "botname": "HeinzBot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "ecbcf512.4e9a28",
+        "type": "telegram bot",
+        "z": "d36d27fb1c254a06",
+        "botname": "HeinzBot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "pollinterval": ""
+    },
+    {
+        "id": "fcc25e57.4073a",
+        "type": "telegram bot",
+        "botname": "HeinzBot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "2db9661a.cf3b0a",
+        "type": "telegram bot",
+        "botname": "HeinzBot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "22ced980da21c836",
+        "type": "telegram bot",
+        "botname": "",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "429a8bcec24f058e",
+        "type": "inject",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payloadType": "date",
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "24d27c059e898ba6"
+            ]
+        ]
+    },
+    {
+        "id": "e407bdcb603f8ba3",
+        "type": "rpi-gpio in",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "pin": "4",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "a2f180ecbfa10dd6"
+            ]
+        ]
+    },
+    {
+        "id": "24d27c059e898ba6",
+        "type": "exec",
+        "z": "61ba2e075fe55eea",
+        "command": "bash  /home/pi/Project_HomeSec/initiate_venv.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "First Python",
+        "x": 850,
+        "y": 320,
+        "wires": [
+            [
+                "58e00b2156cd7d4b"
+            ],
+            [
+                "1e006703d2cd5648"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1e006703d2cd5648",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "58e00b2156cd7d4b",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "str = msg.payload;\n  \n  return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 480,
+        "wires": [
+            [
+                "1e006703d2cd5648",
+                "8b5840c4932be4c7"
+            ]
+        ]
+    },
+    {
+        "id": "c5a90e33370899bf",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8b5840c4932be4c7",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "a = msg.payload.split(\" \")\nlet low = 0\nlet arr = []\nlet val = 0\nfor (let i = 0; i < a.length; i++) {\n   if (i % 2 == 0) {\n      if (a[i] == \"unknown\"){\n        val = parseInt(a[i+1])\n        i = i+1\n      }\n   }\n    else{\n        arr.push(parseInt(a[i]))\n    }\n}\n// msg.payload = arr\nfor (let i = 0; i < arr.length; i++) {\n    if (arr[i] > val) {\n        msg.payload = 0\n        break\n        }\n    else msg.payload = 1\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 480,
+        "wires": [
+            [
+                "c5a90e33370899bf",
+                "e8d8d64bd77cb090"
+            ]
+        ]
+    },
+    {
+        "id": "a2f180ecbfa10dd6",
+        "type": "delay",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "20",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "24d27c059e898ba6"
+            ]
+        ]
+    },
+    {
+        "id": "4929aed25b034b30",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1880,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f9a04bc731ea87c",
+        "type": "camerapi-takephoto",
+        "z": "61ba2e075fe55eea",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 1510,
+        "y": 260,
+        "wires": [
+            [
+                "d9507b6ccc624a01"
+            ]
+        ]
+    },
+    {
+        "id": "d9507b6ccc624a01",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  type : 'photo',\n  chatId: 5058934063,\n  message_id : 90\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 280,
+        "wires": [
+            [
+                "4929aed25b034b30"
+            ]
+        ]
+    },
+    {
+        "id": "64c8f2a47d4254dc",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Good Morning! sir. Hope you will enjoy your day today./nEnter /camera-status to get information about the \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e45a67124d2af31",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b9ccb10234b6505",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"*Intruder Alert:*\\nDo you know this person?\\nType /know or /unknown\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 400,
+        "wires": [
+            [
+                "3e45a67124d2af31"
+            ]
+        ]
+    },
+    {
+        "id": "143b365b7f185a6e",
+        "type": "delay",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 360,
+        "wires": [
+            [
+                "7b9ccb10234b6505"
+            ]
+        ]
+    },
+    {
+        "id": "e8d8d64bd77cb090",
+        "type": "switch",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1330,
+        "y": 360,
+        "wires": [
+            [
+                "143b365b7f185a6e",
+                "9f9a04bc731ea87c"
+            ]
+        ]
+    },
+    {
+        "id": "ea2a78409619ccac",
+        "type": "inject",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1270,
+        "y": 160,
+        "wires": [
+            [
+                "9f9a04bc731ea87c"
+            ]
+        ]
+    },
+    {
+        "id": "ce1ac4510c1ba54b",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45b519ee3994aff3",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Ok, Sorry for disturbing. Have a good Day.\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "ce1ac4510c1ba54b"
+            ]
+        ]
+    },
+    {
+        "id": "f852b6bc1fd7825a",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 920,
+        "y": 880,
+        "wires": [
+            [
+                "d52bb57afe3338ec"
+            ]
+        ]
+    },
+    {
+        "id": "45df7f30968df1aa",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "build keyboard",
+        "func": "var opts = {\n  reply_markup: JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": \"Yes\",\n                    \"callback_data\": \"1\"            \n                }, \n                {\n                    \"text\": \"No\",\n                    \"callback_data\": \"2\"            \n                }]\n            ]\n  })\n};\n\nmsg.payload.content = \"Do you want to inform police?\";\nmsg.payload.options = opts;\nmsg.payload.chatId = 5058934063;\nmsg.payload.messageId = 99;\nmsg.payload.sentMessageId = 99;\nmsg.payload.type = \"message\";\n\nreturn [ msg ];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 880,
+        "wires": [
+            [
+                "5e58486536b70e5e",
+                "f852b6bc1fd7825a"
+            ]
+        ]
+    },
+    {
+        "id": "5e58486536b70e5e",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "5de6742b6c1278c1",
+        "type": "telegram event",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 330,
+        "y": 962,
+        "wires": [
+            [
+                "1735457db0a95f1b",
+                "aefa2b9394cc303e"
+            ]
+        ]
+    },
+    {
+        "id": "d52bb57afe3338ec",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "save messageId",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1735457db0a95f1b",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "YES REALLY",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 960,
+        "wires": [
+            [
+                "ed0d8e6809bafd10"
+            ]
+        ]
+    },
+    {
+        "id": "0b3e831bb7b03c31",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/unknown",
+        "command": "/unknown",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 840,
+        "wires": [
+            [
+                "45df7f30968df1aa"
+            ]
+        ]
+    },
+    {
+        "id": "31863ce9bc1c9804",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/know",
+        "command": "/know",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [
+                "45b519ee3994aff3"
+            ]
+        ]
+    },
+    {
+        "id": "48f8298e9c51a523",
+        "type": "inject",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 800,
+        "wires": [
+            [
+                "45df7f30968df1aa"
+            ]
+        ]
+    },
+    {
+        "id": "ed0d8e6809bafd10",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aefa2b9394cc303e",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = msg.payload.content\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1040,
+        "wires": [
+            [
+                "fcf443b14fdb3faf"
+            ]
+        ]
+    },
+    {
+        "id": "fadb466b1eb9f112",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40a1f6d39a8250b2",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Informed police. Do you want to inform neighbor? Type '/neighbor' to alert the neighbor\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1160,
+        "wires": [
+            [
+                "fadb466b1eb9f112"
+            ]
+        ]
+    },
+    {
+        "id": "fcf443b14fdb3faf",
+        "type": "switch",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 1120,
+        "wires": [
+            [
+                "40a1f6d39a8250b2"
+            ]
+        ]
+    },
+    {
+        "id": "ea2d47f1c30fa6bb",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/siren",
+        "command": "/neighbor",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 1280,
+        "wires": [
+            [
+                "fd6dd3f55324a7f6",
+                "71d9c51b7d4d2d27"
+            ]
+        ]
+    },
+    {
+        "id": "0ca0b4639efcb0f0",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/neighbour",
+        "command": "/neighbour",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 1380,
+        "wires": [
+            [
+                "3f30f238e59b39b4"
+            ]
+        ]
+    },
+    {
+        "id": "fd6dd3f55324a7f6",
+        "type": "mqtt out",
+        "z": "61ba2e075fe55eea",
+        "name": "number1",
+        "topic": "topic/siren",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9300d078150a786e",
+        "x": 560,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "71d9c51b7d4d2d27",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "3f30f238e59b39b4",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "afab14f89867cd4e",
+        "type": "telegram command",
+        "z": "61ba2e075fe55eea",
+        "name": "/camera-status",
+        "command": "/camera-status",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "a3c3b140af9c3f6b"
+            ]
+        ]
+    },
+    {
+        "id": "336a7b95b0c1181c",
+        "type": "telegram sender",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0cbac4babdeca2bf",
+        "type": "function",
+        "z": "61ba2e075fe55eea",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  message: `Hey ${msg.originalMessage.from.first_name}, here is the random piture you requested`,\n  type : 'photo',\n  chatId: msg.originalMessage.chat.id,\n  chat: msg.originalMessage.chat,\n  from: msg.originalMessage.from,\n  message_id : msg.originalMessage.message_id\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 440,
+        "wires": [
+            [
+                "336a7b95b0c1181c"
+            ]
+        ]
+    },
+    {
+        "id": "a3c3b140af9c3f6b",
+        "type": "camerapi-takephoto",
+        "z": "61ba2e075fe55eea",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "0cbac4babdeca2bf"
+            ]
+        ]
+    },
+    {
+        "id": "8387f2c1d0d6ab8e",
+        "type": "debug",
+        "z": "61ba2e075fe55eea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b8e0473ef0151e6e",
+        "type": "rpi-gpio in",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "pin": "4",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb5726632a886c10",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "originalMessage",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2eb80a2188bb53d1",
+        "type": "telegram command",
+        "z": "d36d27fb1c254a06",
+        "name": "/camera-status",
+        "command": "/camera-status",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "e33989c852a087d6",
+                "392fb411445b631b"
+            ]
+        ]
+    },
+    {
+        "id": "bb48a5b0473fe983",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e33989c852a087d6",
+        "type": "camerapi-takephoto",
+        "z": "d36d27fb1c254a06",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "894b3ca9d20e3f96",
+                "cb5726632a886c10"
+            ]
+        ]
+    },
+    {
+        "id": "894b3ca9d20e3f96",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  message: `Hey ${msg.originalMessage.from.first_name}, here is the random piture you requested`,\n  type : 'photo',\n  chatId: msg.originalMessage.chat.id,\n  chat: msg.originalMessage.chat,\n  from: msg.originalMessage.from,\n  message_id : msg.originalMessage.message_id\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "bb48a5b0473fe983"
+            ]
+        ]
+    },
+    {
+        "id": "e1bf382731497734",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a6e57293d320ff6",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Good Morning! sir. Hope you will enjoy your day today./nEnter /camera-status to get information about the \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "e1bf382731497734"
+            ]
+        ]
+    },
+    {
+        "id": "66473c5822e60dcc",
+        "type": "telegram command",
+        "z": "d36d27fb1c254a06",
+        "name": "/know",
+        "command": "/know",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "22ced980da21c836",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "5537d08f91ccde04"
+            ]
+        ]
+    },
+    {
+        "id": "ae35a5523d042f9f",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 420,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5537d08f91ccde04",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"We will report to the police\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 480,
+        "wires": [
+            [
+                "ae35a5523d042f9f"
+            ]
+        ]
+    },
+    {
+        "id": "7654a517.757b84",
+        "type": "telegram event",
+        "z": "d36d27fb1c254a06",
+        "name": "live location receiver",
+        "bot": "d186a99c7342f2a5",
+        "event": "edited_message",
+        "autoanswer": true,
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "365556c8.2d4362",
+                "6e9920566bc8b2cf"
+            ]
+        ]
+    },
+    {
+        "id": "365556c8.2d4362",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "create location message",
+        "func": "if(msg.payload.location)\n{\n    var lat = msg.payload.location.latitude;\n    var lng = msg.payload.location.longitude;\n    var user = msg.payload.from.username;\n    \n    msg.payload.type = 'message';\n    msg.payload.content = user + ' moved to lat=' + lat + ' lon=' + lng;\n    msg.location.lon = lng\n    msg.location.lat = lat\n    return msg;\n}\nelse\n{\n    return null;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "0be5fcefbab25f09",
+                "3e205e3235dc397b"
+            ]
+        ]
+    },
+    {
+        "id": "0be5fcefbab25f09",
+        "type": "openweathermap",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "",
+        "country": "",
+        "language": "en",
+        "x": 720,
+        "y": 600,
+        "wires": [
+            [
+                "ac3e4b9e2da96a4d"
+            ]
+        ]
+    },
+    {
+        "id": "ac3e4b9e2da96a4d",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3e205e3235dc397b",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.content",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6e9920566bc8b2cf",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "da4cf949.cb9118",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "send location",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 810,
+        "y": 1000,
+        "wires": [
+            [
+                "c95ae907.49e268"
+            ]
+        ]
+    },
+    {
+        "id": "9d2ef78b.a10f28",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "send initial location",
+        "func": "// see https://core.telegram.org/bots/api#sendlocation\n\nvar lat = flow.get(\"lat\");\nvar lng = flow.get(\"lng\");\nvar time = flow.get(\"time\");\n\n\nmsg.payload.type = 'location';\nmsg.payload.content = {\n    latitude : lat,\n    longitude : lng\n};\n  \nmsg.payload.options = {\n    live_period : time\n};  \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1000,
+        "wires": [
+            [
+                "da4cf949.cb9118"
+            ]
+        ]
+    },
+    {
+        "id": "36afbf82.a7e8a",
+        "type": "inject",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 940,
+        "wires": [
+            [
+                "4cd6fcae.338154"
+            ]
+        ]
+    },
+    {
+        "id": "4cd6fcae.338154",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "intialize location",
+        "func": "// Here we initialize some sample data \n// for later usage\n\nflow.set(\"lat\", 47);\nflow.set(\"lng\", 10);\n\n// the live_period in seconds\nflow.set(\"time\", 600);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c95ae907.49e268",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "store messageId",
+        "func": "// Here we store the message id of the live location message, \n// as we need to update exactly this one later\n\nvar messageId = msg.payload.sentMessageId;\nflow.set(\"messageId\", messageId);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1000,
+        "wires": [
+            [
+                "a5937ff5e805349f"
+            ]
+        ]
+    },
+    {
+        "id": "a5937ff5e805349f",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "449dc685.098248",
+        "type": "telegram command",
+        "z": "d36d27fb1c254a06",
+        "name": "/send to send location",
+        "command": "/where-am-i",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": true,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 1000,
+        "wires": [
+            [
+                "9d2ef78b.a10f28"
+            ]
+        ]
+    },
+    {
+        "id": "20636f59.fed13",
+        "type": "telegram event",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "event": "callback_query",
+        "autoanswer": true,
+        "x": 140,
+        "y": 1260,
+        "wires": [
+            [
+                "f0a3c788.7bbb18",
+                "ab3f06a.9c5a0f8"
+            ]
+        ]
+    },
+    {
+        "id": "d0ae190d.071828",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "show inline keyboard",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 582.7594223022461,
+        "y": 1153.303310394287,
+        "wires": [
+            [
+                "23220303.4a427c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3426758a.a2d09a",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "initial inline keyboard message",
+        "func": "context.global.keyboard = { messageId : msg.payload.messageId };\n\nvar opts = {\n  reply_to_message_id: msg.payload.messageId,\n  reply_markup: JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": \"Yes, go ahead.\",\n                    \"callback_data\": \"YES\"            \n                }, \n                {\n                    \"text\": \"No, not needed.\",\n                    \"callback_data\": \"NO\"            \n                }]\n            ]\n  })\n};\nmsg.payload.type = \"message\";\nmsg.payload.content = 'Do you really want to call police?';\nmsg.payload.options = opts;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 321.7592468261719,
+        "y": 1154.303228378296,
+        "wires": [
+            [
+                "d0ae190d.071828"
+            ]
+        ]
+    },
+    {
+        "id": "d7bfbd4.da4e34",
+        "type": "telegram command",
+        "z": "d36d27fb1c254a06",
+        "name": "sending question with suspect picture",
+        "command": "/inform-police",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 1100,
+        "wires": [
+            [
+                "3426758a.a2d09a",
+                "2823822db2f143ed"
+            ]
+        ]
+    },
+    {
+        "id": "43cecef5.e2e93",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "YES REALLY",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1260,
+        "wires": [
+            [
+                "8e746981.f48368"
+            ]
+        ]
+    },
+    {
+        "id": "8e746981.f48368",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 810,
+        "y": 1260,
+        "wires": [
+            [
+                "2e9b911.c6c726e"
+            ]
+        ]
+    },
+    {
+        "id": "2c6089c4.883006",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "YES",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1220,
+        "wires": [
+            [
+                "8e746981.f48368"
+            ]
+        ]
+    },
+    {
+        "id": "23220303.4a427c",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "save messageId",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800.6667861938477,
+        "y": 1153.6667127609253,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e9b911.c6c726e",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.content",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "f0a3c788.7bbb18",
+        "type": "switch",
+        "z": "d36d27fb1c254a06",
+        "name": "check callback data",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 350,
+        "y": 1260,
+        "wires": [
+            [
+                "2c6089c4.883006"
+            ],
+            [
+                "43cecef5.e2e93"
+            ],
+            [
+                "8e23029e.001b7"
+            ]
+        ]
+    },
+    {
+        "id": "8e23029e.001b7",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "NO",
+        "func": "var show_alert = true; // you can set this to true to open a dialog with the answer in the client.\n\n// msg.payload.content contains the callback data from the keyboard.\n// You may change this value here.\nmsg.payload.options = show_alert;\n// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1300,
+        "wires": [
+            [
+                "8e746981.f48368"
+            ]
+        ]
+    },
+    {
+        "id": "aa5f7447422c6422",
+        "type": "inject",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 1200,
+        "wires": [
+            [
+                "aa6f7a925b234f14"
+            ]
+        ]
+    },
+    {
+        "id": "2823822db2f143ed",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.type",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "aa6f7a925b234f14",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "func": "msg.payload.type = \"message\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1200,
+        "wires": [
+            [
+                "3426758a.a2d09a"
+            ]
+        ]
+    },
+    {
+        "id": "f7c18f49.063c4",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 1400,
+        "wires": [
+            [
+                "2f9c9c7cfc480d11"
+            ]
+        ]
+    },
+    {
+        "id": "f97878f7.de1bf8",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "build keyboard",
+        "func": "var opts = {\n  reply_markup: JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": \"Yes\",\n                    \"callback_data\": \"1\"            \n                }, \n                {\n                    \"text\": \"No\",\n                    \"callback_data\": \"2\"            \n                }]\n            ]\n  })\n};\n\nmsg.payload.content = \"Do you want to inform police?\";\nmsg.payload.options = opts;\nmsg.payload.chatId = 5058934063;\nmsg.payload.messageId = 99;\nmsg.payload.sentMessageId = 99;\nmsg.payload.type = \"message\";\n\nreturn [ msg ];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1400,
+        "wires": [
+            [
+                "67925ff5.4c7c9",
+                "f7c18f49.063c4"
+            ]
+        ]
+    },
+    {
+        "id": "67925ff5.4c7c9",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "e1a6a394.269598",
+        "type": "inject",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.content",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 1400,
+        "wires": [
+            [
+                "f97878f7.de1bf8"
+            ]
+        ]
+    },
+    {
+        "id": "981d4537.1ced18",
+        "type": "telegram event",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 170,
+        "y": 1482,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab3f06a.9c5a0f8",
+        "type": "debug",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "2f9c9c7cfc480d11",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "save messageId",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9609d4e652e217df",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "YES REALLY",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1480,
+        "wires": [
+            [
+                "c059845a0768561e"
+            ]
+        ]
+    },
+    {
+        "id": "c059845a0768561e",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d266af69c20f877",
+        "type": "inject",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 06 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "2a6e57293d320ff6"
+            ]
+        ]
+    },
+    {
+        "id": "a2fe8c9e6eea619f",
+        "type": "telegram sender",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7630b07b9d05465e",
+        "type": "function",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"*Intruder Alert:*\\nDo you know this person?\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 300,
+        "wires": [
+            [
+                "a2fe8c9e6eea619f"
+            ]
+        ]
+    },
+    {
+        "id": "392fb411445b631b",
+        "type": "delay",
+        "z": "d36d27fb1c254a06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "7630b07b9d05465e"
+            ]
+        ]
+    },
+    {
+        "id": "56677cb7.9840b4",
+        "type": "inject",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payloadType": "str",
+        "x": 830,
+        "y": 820,
+        "wires": [
+            [
+                "f7696701.4cf1e8"
+            ]
+        ]
+    },
+    {
+        "id": "f7696701.4cf1e8",
+        "type": "exec",
+        "z": "cebe629e37033d3e",
+        "command": "raspistill",
+        "addpay": false,
+        "append": "-rot 180 -w 320 -h 240 -o -",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 960,
+        "y": 820,
+        "wires": [
+            [
+                "e7f06c8d.c0a3b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9e6ed9dc.f64ba8",
+        "type": "template",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img width=\"320px\" height=\"240px\" src=\"data:image/jpg;base64,{{{payload}}}\">",
+        "output": "str",
+        "x": 1250,
+        "y": 820,
+        "wires": [
+            [
+                "31f4a997caa56a7d"
+            ]
+        ]
+    },
+    {
+        "id": "e7f06c8d.c0a3b",
+        "type": "base64",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "action": "str",
+        "property": "payload",
+        "x": 1120,
+        "y": 820,
+        "wires": [
+            [
+                "9e6ed9dc.f64ba8"
+            ]
+        ]
+    },
+    {
+        "id": "31f4a997caa56a7d",
+        "type": "mqtt out",
+        "z": "cebe629e37033d3e",
+        "name": "cloudMQTT",
+        "topic": "Phone/photo",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5b4b39a99e3a30a7",
+        "x": 1430,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "4d40b93d453bd503",
+        "type": "mqtt in",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "topic": "Phone/msg",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5b4b39a99e3a30a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1420,
+        "y": 700,
+        "wires": [
+            [
+                "1c9425e487bbc950",
+                "01b0083121c958a4"
+            ]
+        ]
+    },
+    {
+        "id": "01b0083121c958a4",
+        "type": "ui_text",
+        "z": "cebe629e37033d3e",
+        "group": "672f8d0dbf96bb91",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1780,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "1c9425e487bbc950",
+        "type": "image",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 1700,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "385948d179f1cec6",
+        "type": "image",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 1570,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "377a5e11d37391b3",
+        "type": "telegram sender",
+        "z": "cebe629e37033d3e",
+        "name": "telegram",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "116f100b6ad2e66b",
+        "type": "function",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Thief entered in your house\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 540,
+        "wires": [
+            [
+                "377a5e11d37391b3"
+            ]
+        ]
+    },
+    {
+        "id": "bd8c55cc6762fa2b",
+        "type": "inject",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 750,
+        "y": 480,
+        "wires": [
+            [
+                "116f100b6ad2e66b"
+            ]
+        ]
+    },
+    {
+        "id": "4cdb400.5a8f3c",
+        "type": "telegram command",
+        "z": "cebe629e37033d3e",
+        "name": "/know",
+        "command": "/know",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 600,
+        "wires": [
+            [
+                "2fcb30a82e8c6e6b"
+            ]
+        ]
+    },
+    {
+        "id": "fdbea5e0.730e08",
+        "type": "http request",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://picsum.photos/200/300",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 750,
+        "y": 660,
+        "wires": [
+            [
+                "352469a3.7bb1d6",
+                "d33bab75.38ecb8"
+            ]
+        ]
+    },
+    {
+        "id": "352469a3.7bb1d6",
+        "type": "function",
+        "z": "cebe629e37033d3e",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  message: `Hey ${msg.originalMessage.from.first_name}, here is the random piture you requested`,\n  type : 'photo',\n  chatId: msg.originalMessage.chat.id,\n  chat: msg.originalMessage.chat,\n  from: msg.originalMessage.from,\n  message_id : msg.originalMessage.message_id\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 680,
+        "wires": [
+            [
+                "b5d7e8fa.e4aa08",
+                "b2b89b56.bd20f8"
+            ]
+        ]
+    },
+    {
+        "id": "b5d7e8fa.e4aa08",
+        "type": "telegram sender",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d33bab75.38ecb8",
+        "type": "debug",
+        "z": "cebe629e37033d3e",
+        "name": "The image",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b2b89b56.bd20f8",
+        "type": "debug",
+        "z": "cebe629e37033d3e",
+        "name": "the telegram msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e94193bc4cf447fd",
+        "type": "telegram command",
+        "z": "cebe629e37033d3e",
+        "name": "/picture",
+        "command": "/picture",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 940,
+        "wires": [
+            [
+                "5360d55e525ff244"
+            ]
+        ]
+    },
+    {
+        "id": "c3f51855bb93e626",
+        "type": "telegram sender",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22acb7743ed853b3",
+        "type": "debug",
+        "z": "cebe629e37033d3e",
+        "name": "The image",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "9a01478c73a334c0",
+        "type": "debug",
+        "z": "cebe629e37033d3e",
+        "name": "the telegram msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "5360d55e525ff244",
+        "type": "camerapi-takephoto",
+        "z": "cebe629e37033d3e",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 920,
+        "y": 920,
+        "wires": [
+            [
+                "9f856dc39b374621"
+            ]
+        ]
+    },
+    {
+        "id": "9f856dc39b374621",
+        "type": "function",
+        "z": "cebe629e37033d3e",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  message: `Hey ${msg.originalMessage.from.first_name}, here is the random piture you requested`,\n  type : 'photo',\n  chatId: msg.originalMessage.chat.id,\n  chat: msg.originalMessage.chat,\n  from: msg.originalMessage.from,\n  message_id : msg.originalMessage.message_id\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 920,
+        "wires": [
+            [
+                "c3f51855bb93e626"
+            ]
+        ]
+    },
+    {
+        "id": "784e9f401e3a141f",
+        "type": "telegram sender",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1060,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2fcb30a82e8c6e6b",
+        "type": "function",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"We will report to the police\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 600,
+        "wires": [
+            [
+                "784e9f401e3a141f"
+            ]
+        ]
+    },
+    {
+        "id": "fa10e37cd17cb241",
+        "type": "file",
+        "z": "cebe629e37033d3e",
+        "name": "images",
+        "filename": "home/pi/Project_HomeSec/dataset/newfile",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 720,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "465b3b818ac06fa4",
+        "type": "http request",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://picsum.photos/200/300",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 590,
+        "y": 860,
+        "wires": [
+            [
+                "fa10e37cd17cb241"
+            ]
+        ]
+    },
+    {
+        "id": "f0caa82a817723e9",
+        "type": "telegram command",
+        "z": "cebe629e37033d3e",
+        "name": "/picture",
+        "command": "/picture",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "d186a99c7342f2a5",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "fdbea5e0.730e08"
+            ]
+        ]
+    },
+    {
+        "id": "ae2e2909a3dcad89",
+        "type": "inject",
+        "z": "cebe629e37033d3e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 430,
+        "y": 820,
+        "wires": [
+            [
+                "465b3b818ac06fa4"
+            ]
+        ]
+    },
+    {
+        "id": "ce5471ee51918135",
+        "type": "ui_toast",
+        "z": "b0db5869f6561a72",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "1",
+        "topic": "bake/rabb",
+        "name": "notify",
+        "x": 480,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "a76a509fe0b7c96c",
+        "type": "ui_button",
+        "z": "b0db5869f6561a72",
+        "name": "",
+        "group": "6dcd9c253384dd05",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 720,
+        "wires": [
+            [
+                "ebc04669b9b9c66a"
+            ]
+        ]
+    },
+    {
+        "id": "0ab2b9d72985ed15",
+        "type": "image",
+        "z": "b0db5869f6561a72",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 870,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b38c309878fc1dc1",
+        "type": "mqtt in",
+        "z": "b0db5869f6561a72",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a14138a1f03fc79c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 640,
+        "y": 640,
+        "wires": [
+            [
+                "0ab2b9d72985ed15"
+            ]
+        ]
+    },
+    {
+        "id": "ebc04669b9b9c66a",
+        "type": "ui_switch",
+        "z": "b0db5869f6561a72",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "6dcd9c253384dd05",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "hello",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "ce5471ee51918135"
+            ]
+        ]
+    },
+    {
+        "id": "4ec0305702e2bc75",
+        "type": "ui_template",
+        "z": "34d8d0c3c220b5ce",
+        "group": "672f8d0dbf96bb91",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "5",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1420,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "076772eae8774e70",
+        "type": "mqtt in",
+        "z": "34d8d0c3c220b5ce",
+        "name": "",
+        "topic": "Phone/photo",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "64589a7bc1c3805f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 820,
+        "wires": [
+            [
+                "4ec0305702e2bc75"
+            ]
+        ]
+    },
+    {
+        "id": "52027337c7a12bbe",
+        "type": "ui_template",
+        "z": "1397a568efc37c3d",
+        "group": "672f8d0dbf96bb91",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "5",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1420,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2e2de85c243d075",
+        "type": "mqtt in",
+        "z": "1397a568efc37c3d",
+        "name": "",
+        "topic": "Phone/photo",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "5b4b39a99e3a30a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 820,
+        "wires": [
+            [
+                "52027337c7a12bbe",
+                "9f54ef8c91d84f4b"
+            ]
+        ]
+    },
+    {
+        "id": "9f54ef8c91d84f4b",
+        "type": "debug",
+        "z": "1397a568efc37c3d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "f52c05a3.0a6da8",
+        "type": "http in",
+        "z": "52be123b8c3723c6",
+        "name": "",
+        "url": "/demo",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "7949e289.83e98c"
+            ]
+        ]
+    },
+    {
+        "id": "685a81e0.07839",
+        "type": "template",
+        "z": "52be123b8c3723c6",
+        "name": "for admins only",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n        <title>Node users demo</title>\n        <style>\n            * {\n                color: #fff;\n            }\n            h1 {\n                font-size: 120px;\n                color: #fff;\n                padding: 20px;\n            }\n        </style>\n    </head>\n    <body style=\"text-align: center; background: #010203;\">\n        <h1>WELCOME ADMIN !!!</h1>\n        <h2>User: {{payload.user.username}}</h2>\n        <h2>Scope: {{payload.user.scope}}</h2>\n    </body>\n</html>",
+        "x": 700,
+        "y": 240,
+        "wires": [
+            [
+                "190aaac9.70f365"
+            ]
+        ]
+    },
+    {
+        "id": "190aaac9.70f365",
+        "type": "http response",
+        "z": "52be123b8c3723c6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 870,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "275190eb.44902",
+        "type": "template",
+        "z": "52be123b8c3723c6",
+        "name": "for allowed users only",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n        <title>Node users demo</title>\n        <style>\n            * {\n                color: #fff;\n            }\n            h1 {\n                font-size: 120px;\n                color: #fff;\n                padding: 20px;\n            }\n        </style>\n    </head>\n    <body style=\"text-align: center; background: #010203;\">\n        <h1>LOGIN SUCCESS !!!</h1>\n        <h2>User: {{payload.user.username}}</h2>\n        <h2>Scope: {{payload.user.scope}}</h2>\n    </body>\n</html>",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "2f91aa34.220966"
+            ]
+        ]
+    },
+    {
+        "id": "2f91aa34.220966",
+        "type": "http response",
+        "z": "52be123b8c3723c6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 870,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3dfcee5e.af09a2",
+        "type": "switch",
+        "z": "52be123b8c3723c6",
+        "name": "check user scope",
+        "property": "payload.user.scope",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "admin",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 240,
+        "wires": [
+            [
+                "685a81e0.07839"
+            ],
+            [
+                "275190eb.44902"
+            ]
+        ]
+    },
+    {
+        "id": "387fe868.031428",
+        "type": "template",
+        "z": "52be123b8c3723c6",
+        "name": "custom login page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n  <meta name=\"mobile-web-app-capable\" content=\"yes\">\n  <style>\n      * {\n  box-sizing: border-box;\n}\n\nhtml {\n  height: 100%;\n}\n\nbody {\n  margin: 0;\n  height: 100%;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  font-size: 15px;\n  background: #000;\n}\n\n.form-group {\n  margin-bottom: 15px;\n}\n\n.form-group input {\n  width: 100%;\n  border-radius: 2px;\n\n  display: block;\n  width: 100%;\n  height: 34px;\n  padding: 6px 12px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #555;\n  outline: 0;\n  border: 1px solid #ddd;\n}\n\n.login-wrapper > a, button {\n  text-decoration: none;\n  cursor: pointer;\n  background-color: #00979C;\n  border: 1px solid #008d92;\n  color: #f3f5f6;\n  transition: color 0.2s, background-color 0.2s;\n\n  text-align: center;\n  padding: 12px 60px;\n  font-size: 1.2rem;\n  display: inline-block;\n  margin-bottom: 1rem;\n  border-radius: 2px;\n  background-color: #00979C;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.login-wrapper > a:hover, .login-wrapper > a:active,\nbutton:hover, button:active {\n  background-color: #00b5bb;\n  color: #f3f5f6;\n  border-color: #00abb0;\n}\n\n.login-wrapper {\n  position: absolute;\n  padding: 15px;\n  margin: 0 auto;\n  width: 400px;\n  color: #EFF0F1;\n  text-align: center;\n  left: calc(50% - 200px);\n  top: calc(50% - 180px);\n}\n\n.response {\n  margin-top: 10px;\n  padding: 15px;\n  color: #fff;\n  border-radius: 2px;\n}\n\n.response.success {\n  background-color: #51b385;\n  border-color: #63bb92;\n}\n\n.response.error {\n  background-color: #c11532;\n  border-color: #c11532;\n}\n\n@media (max-width: 768px) {\n  .login-wrapper {\n    width: 100%;\n    left: 0;\n    top: 100px;\n    padding: 15px 30px;\n  }\n}\n  </style>\n  <title>Node-RED Node Users</title>\n</head>\n<body>\n\n  <div class=\"login-wrapper\">\n    \n    <h1>Custom Users Login</h1>\n    <form id=\"login-form\">\n      <div class=\"form-group\">\n        <input type=\"text\" name=\"username\" placeholder=\"Username\"/>  \n      </div>\n      <div class=\"form-group\">\n        <input type=\"password\" name=\"password\" placeholder=\"Password\"/>  \n      </div>\n      <button type=\"submit\">Login</button>\n      <div class=\"response\"></div>\n    </form>\n\n  </div>\n    \n  <script src=\"http://code.jquery.com/jquery-3.3.1.min.js\"></script>\n  <script>\n    var responseTimer;\n\n    function showResponse(message, type) {\n      $(\".response\").text(message);\n      $(\".response\").removeClass(\"success\").removeClass(\"error\").addClass(type).show();\n\n      clearTimeout(responseTimer);\n      responseTimer = setTimeout(function () {\n        $(\".response\").fadeOut();\n      }, 4000);\n    }\n\n    function getParameterByName(name) {\n      var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);\n      return match && decodeURIComponent(match[1].replace(/\\+/g, ' '));\n    }\n\n    $(\"#login-form\").submit(function (e) {\n      e.preventDefault();\n      var username = $(this).find(\"input[name=username]\").val();\n      var password = $(this).find(\"input[name=password]\").val();\n      var cred = {\n        username: username,\n        password: password\n      };\n      $.post('/users', cred).done(function () {\n        showResponse(\"Login success! Redirecting...\", \"success\");\n        setTimeout(function () {\n            window.location = '/demo';  \n        }, 2000);        \n      }).fail(function (xhr) {\n        var msg = \"\";\n        switch(xhr.status) {\n          case 0:\n            msg = \"Failed to connect with server.\";\n            break;\n          case 401: \n            msg = \"Unauthorized: username and password not found\";\n            break;\n          default: \n            msg = \"Server error: oops.. something went wrong...\";\n        }\n        showResponse(msg, \"error\");\n      });\n    });\n  </script>\n\n</body>\n</html>",
+        "x": 490,
+        "y": 400,
+        "wires": [
+            [
+                "836fe30d.532e6"
+            ]
+        ]
+    },
+    {
+        "id": "836fe30d.532e6",
+        "type": "http response",
+        "z": "52be123b8c3723c6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3a39de13.7673d2",
+        "type": "comment",
+        "z": "52be123b8c3723c6",
+        "name": "User unauthorized, show login page",
+        "info": "",
+        "x": 540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "63ad879d.2975f8",
+        "type": "comment",
+        "z": "52be123b8c3723c6",
+        "name": "User authorized, allow through",
+        "info": "",
+        "x": 500,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7949e289.83e98c",
+        "type": "users_isloggedin",
+        "z": "52be123b8c3723c6",
+        "name": "",
+        "enableCustomHandler": true,
+        "outputs": 2,
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "3dfcee5e.af09a2"
+            ],
+            [
+                "387fe868.031428"
+            ]
+        ]
+    },
+    {
+        "id": "10f71e8228113b44",
+        "type": "inject",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payloadType": "date",
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "c292168496a43977"
+            ]
+        ]
+    },
+    {
+        "id": "e1eab2322472f8b4",
+        "type": "rpi-gpio in",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "pin": "4",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15754171649a0842",
+        "type": "mqtt out",
+        "z": "e77514a2354cfdbd",
+        "name": "number1",
+        "topic": "topic/test",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9300d078150a786e",
+        "x": 470,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6699709074c2dc61",
+        "type": "inject",
+        "z": "e77514a2354cfdbd",
+        "name": "publish",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "topic/test",
+        "payload": "Check",
+        "payloadType": "str",
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "d26a11ec2965651a"
+            ]
+        ]
+    },
+    {
+        "id": "d26a11ec2965651a",
+        "type": "debug",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c292168496a43977",
+        "type": "exec",
+        "z": "e77514a2354cfdbd",
+        "command": "bash  /home/pi/Project_HomeSec/initiate_venv.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "First Python",
+        "x": 810,
+        "y": 200,
+        "wires": [
+            [
+                "515b3ca04ce4c694"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f1b98107cb11549b",
+        "type": "debug",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "515b3ca04ce4c694",
+        "type": "function",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "func": "str = msg.payload;\n  \n  return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 360,
+        "wires": [
+            [
+                "f1b98107cb11549b",
+                "ee8476144ca4cde2"
+            ]
+        ]
+    },
+    {
+        "id": "0ca6b2227f4434f5",
+        "type": "inject",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ce4666b31a05aea",
+        "type": "file in",
+        "z": "e77514a2354cfdbd",
+        "name": "Read Result",
+        "filename": "./Documents/result.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 390,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b4a5a82776cdd56",
+        "type": "debug",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e2ea425dcaf057a6",
+        "type": "image",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 1240,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ec7bfe56a54d7db",
+        "type": "exec",
+        "z": "e77514a2354cfdbd",
+        "command": "raspistill",
+        "addpay": false,
+        "append": "-rot 180 -w 320 -h 240 -o -",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 780,
+        "y": 520,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "66d82927fdcf99d3",
+        "type": "template",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img width=\"320px\" height=\"240px\" src=\"data:image/jpg;base64,{{{payload}}}\">",
+        "output": "str",
+        "x": 1120,
+        "y": 520,
+        "wires": [
+            [
+                "e2ea425dcaf057a6"
+            ]
+        ]
+    },
+    {
+        "id": "3f5bfc1b87495ccb",
+        "type": "base64",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "action": "str",
+        "property": "payload",
+        "x": 970,
+        "y": 520,
+        "wires": [
+            [
+                "66d82927fdcf99d3"
+            ]
+        ]
+    },
+    {
+        "id": "c0b79e6cc3f41819",
+        "type": "debug",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ee8476144ca4cde2",
+        "type": "function",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "func": "a = msg.payload.split(\" \")\nlet low = 0\nlet arr = []\nlet val = 0\nfor (let i = 0; i < a.length; i++) {\n   if (i % 2 == 0) {\n      if (a[i] == \"unknown\"){\n        val = parseInt(a[i+1])\n        i = i+1\n      }\n   }\n    else{\n        arr.push(parseInt(a[i]))\n    }\n}\nfor (let i = 0; i < arr.length; i++) {\n    if (arr[i] > val) {\n        msg.payload = 0\n        break\n        }\n    else msg.payload = 1\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 360,
+        "wires": [
+            [
+                "c0b79e6cc3f41819",
+                "b54a13315cca7e76"
+            ]
+        ]
+    },
+    {
+        "id": "42e525932a0a7a29",
+        "type": "delay",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "20",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "c292168496a43977"
+            ]
+        ]
+    },
+    {
+        "id": "8dfc8b04bbaf0707",
+        "type": "telegram sender",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1840,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e90516d98e944d3",
+        "type": "camerapi-takephoto",
+        "z": "e77514a2354cfdbd",
+        "filemode": "2",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 1470,
+        "y": 140,
+        "wires": [
+            [
+                "31d4687bd497e984"
+            ]
+        ]
+    },
+    {
+        "id": "31d4687bd497e984",
+        "type": "function",
+        "z": "e77514a2354cfdbd",
+        "name": "send picture",
+        "func": "var pl = {\n  content: msg.payload,\n  type : 'photo',\n  chatId: 5058934063,\n  message_id : 90\n}\n\nmsg.payload = pl;\n\n\n/* type can be one of the following\nphoto\naudio\nvideo\nsticker\nvoice\ndocument\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 160,
+        "wires": [
+            [
+                "8dfc8b04bbaf0707"
+            ]
+        ]
+    },
+    {
+        "id": "aa513fac848273ad",
+        "type": "function",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"Good Morning! sir. Hope you will enjoy your day today./nEnter /camera-status to get information about the \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "712a7c661cfb54d1",
+        "type": "telegram sender",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "bot": "d186a99c7342f2a5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1990,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b3827fc134089bd",
+        "type": "function",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5058934063\nmsg.payload.type = \"message\"\nmsg.payload.content = \"*Intruder Alert:*\\nDo you know this person?\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
+        "y": 280,
+        "wires": [
+            [
+                "712a7c661cfb54d1"
+            ]
+        ]
+    },
+    {
+        "id": "4f96c1e156c38406",
+        "type": "delay",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1500,
+        "y": 240,
+        "wires": [
+            [
+                "0b3827fc134089bd"
+            ]
+        ]
+    },
+    {
+        "id": "b54a13315cca7e76",
+        "type": "switch",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1290,
+        "y": 240,
+        "wires": [
+            [
+                "4f96c1e156c38406",
+                "5e90516d98e944d3"
+            ]
+        ]
+    },
+    {
+        "id": "78cc4dd40ebc7f1a",
+        "type": "inject",
+        "z": "e77514a2354cfdbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1230,
+        "y": 40,
+        "wires": [
+            [
+                "5e90516d98e944d3"
+            ]
+        ]
+    }
+]
