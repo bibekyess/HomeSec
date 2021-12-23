@@ -6,8 +6,8 @@ Work are divided into two parts:
 1. Make Face-Recognition model
 2. Integrate Face-Regonition with Node-red Workflow and other services mashups
 
-1. For the Face-Recognition, We used OpenCv's Haar-Cascade Classifier. AS code workflow, We use github opensource code[Ref] as per our requirement. Code details can be found in
-/HomeSec/Face-Recognition/ folder. There are there main python files: one for  Face-imges capturing called 01_face_dataset.py, two for training those captured images to our face-recognition Haar-Cascasde classifier called 
+1. For the Face-Recognition, We used OpenCv's Haar-Cascade Classifier. AS code workflow, We use github opensource code[1] as per our requirement. Code details can be found in
+/HomeSec/Face_Recognition/ folder. There are there main python files: one for  Face-imges capturing called 01_face_dataset.py, two for training those captured images to our face-recognition Haar-Cascasde classifier called 
 02_face_training.py and three for using those trained weight on our custom faces and for Face-Recognition called HomeSec_Algo.py. trainer.yml is the trained weight for our Face_Recognition model. haarcascade_frontalface_deafult.xml is
 the classifier provided by the OpenCV. 
 
